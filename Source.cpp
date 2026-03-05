@@ -1,24 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
+	int quantity;
 	float price;
-	float discountpercent;
-	// Enter discount percent in decimal form;
-	float discountamount;
-	float discountprice;
+	float extprice;
 
-cout << "Enter the price of the item: ";
-cin >> price;
+	cout<< "Enter the quantity: ";
+	cin>> quantity;
 
-cout << "Enter the discount percent: ";
-cin >> discountpercent;
+	cout<< "Enter the price: ";
+	cin>> price;
 
-discountamount = price * discountpercent;
-discountprice = price - discountamount;
+	extprice = quantity * price;
 
-cout << "Discounted Price: $" << discountprice << endl;
-cout << "Discount Amount: $" << discountamount << endl;
+	cout<< "The extended price is: " << extprice << endl;
 
-return 0;
+	return 0;
 }
